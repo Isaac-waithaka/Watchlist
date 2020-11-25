@@ -26,7 +26,7 @@ def movie(movie_id):
     View movie page function that returns the movie details page and its data
     '''
 
-    movie = get_movie(id)
+    movie = get_movie(movie_id)
     title = f'{movie.title}'
 
     return render_template('movie.html',title = title,movie = movie)
